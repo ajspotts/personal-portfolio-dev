@@ -34,7 +34,6 @@
     "clean": "rm -rf public .cache",
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "deploy:github": "npm run clean && npm run build && node ./scripts/deploy-github",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
