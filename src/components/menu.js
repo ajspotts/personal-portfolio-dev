@@ -1,21 +1,27 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Button from './button'
+import React from 'react';
+import { Link } from 'gatsby'
 
 const Menu = () => (
-    <div style={{
-      paddingTop: '10px'
+  <div style={{
+    paddingTop: '10px'
+  }}>
+    <ul style={{
+      listStyle: 'none',
+      display: 'flex',
+      justifyContent: 'space-evenly'
     }}>
-      <ul style={{
-        listStyle: 'none',
-        display: 'flex',
-        justifyContent: 'space-evenly'
-      }}>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/about'>About</Link></li>
-      <li><Link to='/projects'>Projects</Link></li> 
-      </ul>
-    </div>
-  )
+    <li>
+    <Link to='/'>Home</Link>
+    </li>
+    <li>
+    <Link to='/about'>About</Link>
+    </li>
+    <li>
+    <Link to='/projects'>Projects</Link>
+    </li>
+    </ul>
+  </div>
+)
+  
 
 export default Menu;
