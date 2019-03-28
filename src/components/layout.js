@@ -27,7 +27,6 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Menu />
-        <div>NETLIFY TEST</div>
         <div
           style={{
             margin: `0 auto`,
