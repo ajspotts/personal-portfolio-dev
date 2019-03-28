@@ -31,8 +31,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -rf public .cache",
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy:github": "npm run clean && npm run build && node ./scripts/deploy-github",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -40,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ajspotts/Portfolio"
+    "url": "https://github.com/ajspotts/ajspotts.github.io"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
