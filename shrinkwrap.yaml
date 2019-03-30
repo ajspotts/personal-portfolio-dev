@@ -3,6 +3,7 @@ dependencies:
   gatsby-cli: 2.4.16
   react-particle-effect-button: 1.0.1
   react-particles-js: 2.5.1
+  react-scroll: 1.7.11
 packages:
   /@babel/code-frame/7.0.0:
     dependencies:
@@ -5810,6 +5811,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+  /lodash.throttle/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   /lodash.toarray/4.4.0:
     dev: false
     resolution:
@@ -7359,7 +7364,7 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react-is: 16.8.5
+      react-is: 16.8.6
     dev: false
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -7562,6 +7567,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sudt2uq5P/2TznPV4Wtdi+Lnq3yaYW8LfvPKLM9BKD8jJNBkxMVyB0C9/GmVhLw7Jbdmndk/73n7XQGeN9A3QQ==
+  /react-is/16.8.6:
+    dev: false
+    resolution:
+      integrity: sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
   /react-lifecycles-compat/3.0.4:
     dev: false
     resolution:
@@ -7586,6 +7595,16 @@ packages:
       react: ^16.0.0
     resolution:
       integrity: sha512-bNHVtYrNEqOQchcmkOiEhRjD+q8RUHQ8/ZV1KzqKrgsdDOlAJBIAW1E61DSGt33tqQxnN6JRI3E6M5TWEIdfXA==
+  /react-scroll/1.7.11:
+    dependencies:
+      lodash.throttle: 4.1.1
+      prop-types: 15.7.2
+    dev: false
+    peerDependencies:
+      react: ^15.5.4 || ^16.0.0
+      react-dom: ^15.5.4 || ^16.0.0
+    resolution:
+      integrity: sha512-MCWtt8KWTBzBlo9oFE7xgAhGcgbslsfQAuGZAfYlBTt3Pxi2CX+kh8OoTUVAuOwNlt9XkoWcvDTWQwtHzm2uOg==
   /read-pkg-up/2.0.0:
     dependencies:
       find-up: 2.1.0
@@ -9544,3 +9563,4 @@ specifiers:
   gatsby-cli: ^2.4.16
   react-particle-effect-button: ^1.0.1
   react-particles-js: ^2.5.1
+  react-scroll: ^1.7.11
