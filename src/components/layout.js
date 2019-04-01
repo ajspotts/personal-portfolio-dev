@@ -8,13 +8,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import Navbar from "./navbar";
 import Header from "./header";
-import About from "./about";
-import Projects from "./projects";
-import Contact from "./contact";
+import Cover from "./cover";
+// import Navbar from "./navbar";
+// import About from "./about";
+// import Projects from "./projects";
+// import Contact from "./contact";
 import "../styles/layout.css";
-import dummyText from "./dummyText";
+import Img from "gatsby-image";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,15 +26,34 @@ const Layout = ({ children }) => (
             title
           }
         }
+
+       
+
+        ImageOne: file(relativePath: { eq: "space.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        imageTwo: file(relativePath: { eq: "wave.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        imageThree: file(relativePath: { eq: "mountain.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Navbar />
-        <About text={dummyText} id="about"/>
-        <Projects text={dummyText} id="projects"/>
-        <Contact text={dummyText} id="contact"/>
         <div
           style={{
             margin: `0 auto`,
@@ -42,12 +62,9 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <Cover />
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}
-            {/* {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> */}
-          </footer>
         </div>
       </>
     )}
