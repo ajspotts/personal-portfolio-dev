@@ -34,7 +34,7 @@ const About = ({text, id}) => (
           <h1 className="name">
             <b>Projects</b>
           </h1>
-          <p className="greetings">{text}</p>
+          <p className="greetings">Please take a look at some of my recent work</p>
         </div>
         <div className="arrow animated bounceInDown">
         </div>

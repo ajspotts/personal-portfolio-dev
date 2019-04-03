@@ -1,8 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from "gatsby";
+import react from "../images/react.png";
+import angular from "../images/angular.svg";
 
-const About = ({text, id}) => (
+const About = ({id}) => (
   <StaticQuery
     query={graphql`
       query AboutImgQuery {
@@ -33,8 +35,12 @@ const About = ({text, id}) => (
         <div className="center">
           <h1 className="name">
             <b>About</b>
+            <img src={react} alt="react" />
+            <img src={angular} alt="angular"/>
           </h1>
-          <p className="greetings">{text}</p>
+          <p className="greetings">I am passionate learning and then utilizing any and all of the newest framweworks, tools and technologies related to web development.</p>
+        </div>
+        <div>
         </div>
         <div className="arrow animated bounceInDown">
         </div>

@@ -33,10 +33,10 @@ const Cover = ({id}) => (
         />
         <div className="overlay" />
         <div className="center">
-          <h1 className="name">
+          <h3 className="name">
             <b>Alec Spottswood</b>
-          </h1>
-          <p className="greetings">Welcome to my portfolio page</p>
+          </h3>
+          <p className="greetings">Full Stack Web Developer</p>
         </div>
         <div className="arrow animated bounceInDown">
         </div>

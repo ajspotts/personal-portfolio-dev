@@ -71,6 +71,7 @@
 .name {
   font-size: 70px;
   font-weight: 900;
+  z-index: 1000;
 }
 
 .greetings {
@@ -123,7 +124,7 @@
 
 @media only screen and (min-width: 550px) {
   .cover .name {
-    font-size: 80px;
+    font-size: 50px;
   }
 
   .projects .subheader {
