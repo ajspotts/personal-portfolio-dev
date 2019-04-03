@@ -1,7 +1,6 @@
 import React from "react";
-// import { Link } from "gatsby";
-import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Layout from "../components/layout";
 import Navbar from "../components/navbar";
 import Cover from "../components/cover";
 import About from "../components/about";
@@ -12,17 +11,17 @@ import dummyText from "../components/dummyText";
 
 const IndexPage = () => (
   <Layout>
+    {/* <div> */}
     <SEO title="Home" keywords={[`web`, `developer`, `full stack`, `application`, `react`, 'portfolio']} />
-    {/* <Cover coverImg={space}/> */}
-    <div>
-    <Navbar />
+    
+    <Cover id="home"/>
     <About text={dummyText} id="about"/>
     <Projects text={dummyText} id="projects"/>
     <Contact text={dummyText} id="contact"/>
-    </div>
     <footer>
       © {new Date().getFullYear()}
     </footer>
+    {/* </div> */}
   </Layout>
 )
 

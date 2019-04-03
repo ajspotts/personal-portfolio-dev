@@ -8,14 +8,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import Header from "./header";
-import Cover from "./cover";
-// import Navbar from "./navbar";
+import Navbar from "./navbar";
+// import Header from "./header";
 // import About from "./about";
 // import Projects from "./projects";
 // import Contact from "./contact";
 import "../styles/layout.css";
-import Img from "gatsby-image";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,25 +25,24 @@ const Layout = ({ children }) => (
           }
         }
 
-       
 
         ImageOne: file(relativePath: { eq: "space.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         imageTwo: file(relativePath: { eq: "wave.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         imageThree: file(relativePath: { eq: "mountain.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -54,18 +51,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <Cover />
-          <main>{children}</main>
-        </div>
+          <Navbar />
+          <div>{children}</div>
       </>
     )}
   />

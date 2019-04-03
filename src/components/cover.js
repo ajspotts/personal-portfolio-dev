@@ -2,14 +2,15 @@ import React from "react";
 import Img from "gatsby-image";
 import "../styles/cover.css";
 import { StaticQuery, graphql } from "gatsby";
+import Elements from "../components/particles";
 
-const Cover = () => (
+const Cover = ({id}) => (
   <StaticQuery
     query={graphql`
       query CoverImgQuery {
         coverImg: file(relativePath: { eq: "space.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,7 +18,7 @@ const Cover = () => (
       }
     `}
     render={data => (
-      <div id="#top" className="cover animated">
+      <div id={id} className="cover animated">
         <Img
           title="Cover image"
           alt="Space"
@@ -39,6 +40,7 @@ const Cover = () => (
         </div>
         <div className="arrow animated bounceInDown">
         </div>
+        <Elements />
       </div>
     )}
   />

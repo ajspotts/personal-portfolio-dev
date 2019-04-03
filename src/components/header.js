@@ -11,9 +11,9 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        zIndex: `2`,
         textAlign: `center`,
         margin: `0 auto`,
-        maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >

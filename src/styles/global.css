@@ -1,10 +1,18 @@
 /* #009FFD */
+/* html {
+	height: 100%;
+}
+
  body {
+	min-height: 100%;
 	width: 100wh;
 	height: 90vh;
-	color: #D3D3D3;
+	color: darkgrey;
+	margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 	background: linear-gradient(-135deg, #2A2A72, #3f5efb, #23A6D5, #02FFFF);
-	background-size: 400% 400%;
+	background-size: 700% 700%;
 	-webkit-animation: Gradient 40s ease infinite;
 	-moz-animation: Gradient 40s ease infinite;
 	animation: Gradient 40s ease infinite;
@@ -53,4 +61,4 @@ h6 {
 	top: 45%;
 	right: 0;
 	left: 0;
-}
+} */
