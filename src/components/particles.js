@@ -5,10 +5,11 @@ const Elements = () => (
   <div
     style={{
       position: "absolute",
-      top: "60px",
+      top: "70px",
       left: 0,
       width: "100%",
-	  	height: "100%",
+			height: "100%",
+			zIndex: 0,
     }}
   >
     <Particles

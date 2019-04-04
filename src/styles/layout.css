@@ -1,6 +1,6 @@
 .nav-content {
   max-width: 900px;
-  padding: 0rem 3rem;
+  padding: 0rem 11rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -9,6 +9,8 @@
 }
 
 .nav-item {
+  position: relative;
+  top: 10px;
   display: inline;
   margin-left: 2rem;
   color: #333;
@@ -19,10 +21,16 @@
   cursor: pointer;
 }
 
+.svg-container img {
+  height: 90px;
+  width: 90px;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-snap-type: y mandatory;
 }
 body {
   margin: 0;
@@ -234,6 +242,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: rgb(21, 195, 226);
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;

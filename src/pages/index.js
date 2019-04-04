@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout>
     {/* <div> */}
     <SEO title="Home" keywords={[`web`, `developer`, `full stack`, `application`, `react`, 'portfolio']} />
-    
+    <Navbar />
     <Cover id="home"/>
     <About text={dummyText} id="about"/>
     <Projects text={dummyText} id="projects"/>

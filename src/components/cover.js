@@ -8,7 +8,7 @@ const Cover = ({id}) => (
   <StaticQuery
     query={graphql`
       query CoverImgQuery {
-        coverImg: file(relativePath: { eq: "space.jpg" }) {
+        coverImg: file(relativePath: { eq: "aurora.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -36,7 +36,7 @@ const Cover = ({id}) => (
           <h3 className="name">
             <b>Alec Spottswood</b>
           </h3>
-          <p className="greetings">Full Stack Web Developer</p>
+          <h3 className="greetings">Full Stack Web Developer</h3>
         </div>
         <div className="arrow animated bounceInDown">
         </div>
