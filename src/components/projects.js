@@ -30,7 +30,7 @@ const About = ({text, id}) => (
           }}
         />
         <div className="overlay" />
-        <div className="center">
+        <div className="projects">
           <h1 className="name">
             <b>Projects</b>
           </h1>

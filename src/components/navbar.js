@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import { Link } from 'gatsby';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 class Navbar extends Component {

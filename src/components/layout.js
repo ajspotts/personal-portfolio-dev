@@ -24,29 +24,6 @@ const Layout = ({ children }) => (
             title
           }
         }
-
-
-        ImageOne: file(relativePath: { eq: "space.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        imageTwo: file(relativePath: { eq: "wave.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        imageThree: file(relativePath: { eq: "mountain.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     `}
     render={data => (
