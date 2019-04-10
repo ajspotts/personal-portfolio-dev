@@ -18,7 +18,7 @@ class Navbar extends Component {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={700}
               >
                 Home
@@ -30,7 +30,7 @@ class Navbar extends Component {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={700}
               >
                 About
@@ -42,7 +42,7 @@ class Navbar extends Component {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={700}
               >
                 Projects
@@ -54,7 +54,7 @@ class Navbar extends Component {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={700}
               >
                 Contact Me

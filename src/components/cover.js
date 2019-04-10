@@ -21,7 +21,7 @@ const Cover = ({id}) => (
       <div id={id} className="cover animated">
         <Img
           title="Cover image"
-          alt="Space"
+          alt="Aurora"
           fluid={data.coverImg.childImageSharp.fluid}
           style={{
             position: "absolute",

@@ -26,7 +26,7 @@ const About = ({id}) => (
   <StaticQuery
     query={graphql`
       query AboutImgQuery {
-        aboutImg: file(relativePath: { eq: "pillars.jpg" }) {
+        aboutImg: file(relativePath: { eq: "stairs.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -39,7 +39,7 @@ const About = ({id}) => (
       <div id={id} className="cover animated">
         <Img
           title="About image"
-          alt="Wave"
+          alt="Stairs"
           fluid={data.aboutImg.childImageSharp.fluid}
           style={{
             position: "absolute",

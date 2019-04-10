@@ -24,7 +24,7 @@
 .about {
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin-top: 60px;
   color: rgba(0, 0, 0, 0.651);
   text-align: center;
   position: absolute;
@@ -66,19 +66,8 @@
   transform: scale(1.3);
 }
 
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-
 .projects {
-  margin: 0;
+  margin-top: 60px;
   color: white;
   text-align: center;
   position: absolute;
@@ -113,7 +102,7 @@ header,
 main,
 menu,
 nav {
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.1);
   position: sticky; 
   top: 0;
   width: 100%;
