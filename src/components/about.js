@@ -58,29 +58,119 @@ const About = ({id}) => (
               <p className="greetings">I am passionate learning and then utilizing any and all of the newest framweworks, tools and technologies related to web development.</p>
           </div>
           <div className="svg-container">
-            <img src={html5} alt="html5" />
-            <img src={css3} alt="css3" />
-            <img src={js} alt="js" />
-            <img src={php} alt="php" />
-            <img src={ruby} alt="ruby" />
-            <img src={python} alt="python" />
-            <img src={react} alt="react" />
-            <img src={redux} alt="redux" />
-            <img src={angular} alt="angular" />
-            <img src={express} alt="express" />
-            <img src={graphQL} alt="graphQL" />
-            <img src={nodejs} alt="nodejs" />
-            <img src={laravel} alt="laravel" />
-            <img src={django} alt="django" />
-            <img src={rails} alt="rails" />
-            <img src={firebase} alt="firebase" />
-            <img src={mongodb} alt="mongodb" />
-            <img src={postgresql} alt="postgresql" />
-          </div> 
-        </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/w1zfk5" target="_blank" rel="noopener noreferrer">
+                <img src={html5} alt="html5" />
+              </a>
+              <h3>HTML</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/gpe80b" target="_blank" rel="noopener noreferrer">
+                <img src={css3} alt="css3" />
+              </a>
+              <h3>CSS</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/gdw8nf" target="_blank" rel="noopener noreferrer">
+                <img src={js} alt="js" />
+              </a>
+              <h3>JavaScript</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/5dmk0k" target="_blank" rel="noopener noreferrer">
+                <img src={php} alt="php" />
+              </a>
+              <h3>PHP</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/51v3f7" target="_blank" rel="noopener noreferrer">
+                <img src={ruby} alt="ruby" />
+              </a>
+              <h3>Ruby</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/u9f3bu" target="_blank" rel="noopener noreferrer">
+                <img src={python} alt="python" />
+              </a>
+              <h3>Python</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/4711zo" target="_blank" rel="noopener noreferrer">
+                <img src={react} alt="react" />
+              </a>
+              <h3>React</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/f4fdtb" target="_blank" rel="noopener noreferrer">
+                <img src={redux} alt="redux" />
+              </a>
+              <h3>Redux</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/0af3pn" target="_blank" rel="noopener noreferrer">
+                <img src={angular} alt="angular" />
+              </a>
+              <h3>Angular</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/8pwvla" target="_blank" rel="noopener noreferrer">
+                <img src={express} alt="express" />
+              </a>
+              <h3>Express</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/chgco7" target="_blank" rel="noopener noreferrer">
+                <img src={graphQL} alt="graphQL" />
+              </a>
+              <h3>GraphQL</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/fno5hy" target="_blank" rel="noopener noreferrer">
+                <img src={nodejs} alt="nodejs" />
+              </a>
+              <h3>Node</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/jm3gu8" target="_blank" rel="noopener noreferrer">
+                <img src={laravel} alt="laravel" />
+              </a>
+              <h3>Laravel</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/hbkv6c" target="_blank" rel="noopener noreferrer">
+                <img src={django} alt="django" />
+              </a>
+              <h3>Django</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/71jw07" target="_blank" rel="noopener noreferrer">
+                <img src={rails} alt="rails" />
+              </a>
+              <h3>Ruby on Rails</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/8jg10f" target="_blank" rel="noopener noreferrer">
+                <img src={firebase} alt="firebase" />
+              </a>
+              <h3>Firebase</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/1lamx3" target="_blank" rel="noopener noreferrer">
+                <img src={mongodb} alt="mongodb" />
+              </a>
+              <h3>MongoDB</h3>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/az0ssm" target="_blank" rel="noopener noreferrer">
+                <img src={postgresql} alt="postgresql" />
+              </a>
+              <h3>PostgreSQL</h3>
+            </div>
+          </div>
         <div className="arrow animated bounceInDown">
         </div>
       </div>
+    </div>
     )}
   />
 );
