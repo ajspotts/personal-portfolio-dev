@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Alec Spottswood's portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "the portfolio website for Alec Spottswood",
+  "version": "1.0",
+  "author": "Alec Spottswood",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.11",
-    "gatsby-cli": "^2.5.4",
+    "gatsby-cli": "^2.5.6",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-manifest": "^2.0.21",
     "gatsby-plugin-offline": "^2.0.24",

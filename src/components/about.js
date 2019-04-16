@@ -52,10 +52,12 @@ const About = ({id}) => (
         <div className="overlay" />
         <div className="about">
           <h1 className="name">
-            <b>About</b>
+            <b>About Me</b>
           </h1>
           <div className="description">
-              <p className="greetings">I am passionate learning and then utilizing any and all of the newest framweworks, tools and technologies related to web development.</p>
+              <h3 className="greetings">I am passionate about learning and implementing all 
+              of the newest <br/>tools and frameworks related to software development.  <br/>
+              Here are some of the technologies I have utilized:</h3>
           </div>
           <div className="svg-container">
             <div className="logo-container">
