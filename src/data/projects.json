@@ -2,31 +2,31 @@
   {
     "name": "MERN Shopping List",
     "description": "Shopping List app built with the MERN (MongoDB, Express, React, Node) stack.",
-    "img": "",
+    "img": "MERN.png",
     "url": "https://desolate-forest-24182.herokuapp.com/"
   },
   {
     "name": "Quali-Fi",
     "description": "A job posting site created with Angular and Ruby on Rails",
-    "img": "",
+    "img": "Quali-Fi.png",
     "url": "https://quali-fi.netlify.com/#/"
   },
   {
     "name": "Charity Finder",
     "description": "A website designed to aid in located charities based on user input built using React and Ruby on Rails",
-    "img": "",
+    "img": "CharityFinder.png",
     "url": "https://charity-finder.netlify.com/"
   },
   {
     "name": "Budgit",
     "description": "Am application to track monthly expenditures built with Ruby on Rails",
-    "img": "",
+    "img": "Budgit.png",
     "url": "https://budgitapplication.herokuapp.com/"
   },
   {
     "name": "Simon game",
     "description": "A simple game based on Simon built utilizing JavaScript and jQuery",
-    "img": "",
+    "img": "Simon.png",
     "url": "https://ajspotts.github.io/Project-1/"
   }
 ]

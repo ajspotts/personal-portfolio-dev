@@ -8,11 +8,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-// import Navbar from "./navbar";
-// import Header from "./header";
-// import About from "./about";
-// import Projects from "./projects";
-// import Contact from "./contact";
 import "../styles/layout.css";
 
 const Layout = ({ children }) => (
