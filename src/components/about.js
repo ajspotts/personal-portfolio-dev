@@ -6,12 +6,14 @@ import js from "../images/javascript.svg";
 import php from "../images/php.svg";
 import python from "../images/python.svg";
 import css3 from "../images/css3.svg"
+import bootstrap from "../images/bootstrap.svg";
 import react from "../images/react.svg";
 import redux from "../images/redux.svg";
 import angular from "../images/angular.svg";
+import nodejs from "../images/nodejs.svg";
 import express from "../images/express.svg";
 import graphQL from "../images/graphql.svg";
-import nodejs from "../images/nodejs.svg";
+import apollo from "../images/apollo.svg";
 import laravel from "../images/laravel.svg";
 import django from "../images/django.svg";
 import ruby from "../images/ruby.svg";
@@ -36,7 +38,7 @@ const About = ({id}) => (
       }
     `}
     render={data => (
-      <div id={id} className="cover animated">
+      <section id={id} className="section cover">
         <Img
           title="About image"
           alt="Stairs"
@@ -54,125 +56,136 @@ const About = ({id}) => (
           <h1 className="name">
             <b>About Me</b>
           </h1>
-          <div className="description">
-              <h3 className="greetings">I am passionate about learning and implementing all 
-              of the newest <br/>tools and frameworks related to software development.  <br/>
-              Here are some of the technologies I have utilized:</h3>
+          <div className="description mb-4">
+              <h5 className="greetings">I'm a developer who is constantly driven to learn and utilize all of the <br/>newest and leading technologies, tools and frameworks related to software development.  <br/>
+              Here are some of the technologies I have implemented:</h5>
           </div>
           <div className="svg-container">
             <div className="logo-container">
               <a href="https://rebrand.ly/w1zfk5" target="_blank" rel="noopener noreferrer">
                 <img src={html5} alt="html5" />
               </a>
-              <h3>HTML</h3>
+              <h5>HTML</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/gpe80b" target="_blank" rel="noopener noreferrer">
                 <img src={css3} alt="css3" />
               </a>
-              <h3>CSS</h3>
+              <h5>CSS</h5>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/3nk1ck" target="_blank" rel="noopener noreferrer">
+                <img src={bootstrap} alt="bootstrap" />
+              </a>
+              <h5>Bootstrap</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/gdw8nf" target="_blank" rel="noopener noreferrer">
                 <img src={js} alt="js" />
               </a>
-              <h3>JavaScript</h3>
+              <h5>JavaScript</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/5dmk0k" target="_blank" rel="noopener noreferrer">
                 <img src={php} alt="php" />
               </a>
-              <h3>PHP</h3>
+              <h5>PHP</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/51v3f7" target="_blank" rel="noopener noreferrer">
                 <img src={ruby} alt="ruby" />
               </a>
-              <h3>Ruby</h3>
+              <h5>Ruby</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/u9f3bu" target="_blank" rel="noopener noreferrer">
                 <img src={python} alt="python" />
               </a>
-              <h3>Python</h3>
+              <h5>Python</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/4711zo" target="_blank" rel="noopener noreferrer">
                 <img src={react} alt="react" />
               </a>
-              <h3>React</h3>
+              <h5>React</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/f4fdtb" target="_blank" rel="noopener noreferrer">
                 <img src={redux} alt="redux" />
               </a>
-              <h3>Redux</h3>
+              <h5>Redux</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/0af3pn" target="_blank" rel="noopener noreferrer">
                 <img src={angular} alt="angular" />
               </a>
-              <h3>Angular</h3>
-            </div>
-            <div className="logo-container">
-              <a href="https://rebrand.ly/8pwvla" target="_blank" rel="noopener noreferrer">
-                <img src={express} alt="express" />
-              </a>
-              <h3>Express</h3>
-            </div>
-            <div className="logo-container">
-              <a href="https://rebrand.ly/chgco7" target="_blank" rel="noopener noreferrer">
-                <img src={graphQL} alt="graphQL" />
-              </a>
-              <h3>GraphQL</h3>
+              <h5>Angular</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/fno5hy" target="_blank" rel="noopener noreferrer">
                 <img src={nodejs} alt="nodejs" />
               </a>
-              <h3>Node</h3>
+              <h5>Node</h5>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/8pwvla" target="_blank" rel="noopener noreferrer">
+                <img src={express} alt="express" />
+              </a>
+              <h5>Express</h5>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/chgco7" target="_blank" rel="noopener noreferrer">
+                <img src={graphQL} alt="graphQL" />
+              </a>
+              <h5>GraphQL</h5>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/s8v7qq" target="_blank" rel="noopener noreferrer">
+                <img src={apollo} alt="apollo" />
+              </a>
+              <h5>Apollo</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/jm3gu8" target="_blank" rel="noopener noreferrer">
                 <img src={laravel} alt="laravel" />
               </a>
-              <h3>Laravel</h3>
+              <h5>Laravel</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/hbkv6c" target="_blank" rel="noopener noreferrer">
                 <img src={django} alt="django" />
               </a>
-              <h3>Django</h3>
+              <h5>Django</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/71jw07" target="_blank" rel="noopener noreferrer">
                 <img src={rails} alt="rails" />
               </a>
-              <h3>Ruby on Rails</h3>
+              <h5>Ruby on Rails</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/8jg10f" target="_blank" rel="noopener noreferrer">
                 <img src={firebase} alt="firebase" />
               </a>
-              <h3>Firebase</h3>
+              <h5>Firebase</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/1lamx3" target="_blank" rel="noopener noreferrer">
                 <img src={mongodb} alt="mongodb" />
               </a>
-              <h3>MongoDB</h3>
+              <h5>MongoDB</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/az0ssm" target="_blank" rel="noopener noreferrer">
                 <img src={postgresql} alt="postgresql" />
               </a>
-              <h3>PostgreSQL</h3>
+              <h5>PostgreSQL</h5>
             </div>
           </div>
         <div className="arrow animated bounceInDown">
         </div>
       </div>
-    </div>
+    </section>
     )}
   />
 );

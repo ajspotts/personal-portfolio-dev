@@ -1,9 +1,10 @@
-import React from 'react';
-import Img from 'gatsby-image';
+import React from "react";
+import Img from "gatsby-image";
 import { StaticQuery, graphql } from "gatsby";
+import "../styles/projects.css";
 import projectList from "../data/projects.json";
 
-const Projects = ({ id, projectImgs }) => (
+const Projects = ({ id }) => (
   <StaticQuery
     query={graphql`
       query ProjectImgQuery {
@@ -33,7 +34,7 @@ const Projects = ({ id, projectImgs }) => (
       }
     `}
     render={data => (
-      <div id={id} className="cover animated">
+      <section id={id} className="section cover animated">
         <Img
           title="Projects image"
           alt="Mountain"
@@ -48,46 +49,48 @@ const Projects = ({ id, projectImgs }) => (
         />
         <div className="overlay" />
         <div className="projects">
-          <h1 className="name">
-            <b>Projects</b>
-          </h1>
-          <p className="greetings">Please take a look at some of my recent work</p>
-          <div className="project-list">
-            {projectList.map(project => {
-              const { edges: projectImgData } = data.ProjectImgs;
-              const image = projectImgData.find(n => {
-                return n.node.relativePath === `projects/${project.img}`;
-              });
-              const imageSizes = image.node.childImageSharp.sizes;
-              return (
-                <a
-                  href={project.url}
-                  key={project.url}
-                  // className={singleCardClass}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="card-img">
-                    <Img
-                      title={project.name}
-                      alt="Screenshot of Project"
-                      sizes={imageSizes}
-                      className="card-img_src center-block"
-                    />
-                  </div>
-                  <div className="blue-divider" />
-                  <div className="card-info">
-                    <h4 className="card-name">{project.name}</h4>
-                    <p>{project.description}</p>
-                  </div>
-                </a>
-              );
-            })}
+        <h1 className="name"><b>Projects</b></h1>
+          <div className="description mb-4">
+              <h5 className="greetings">Please take a look at some of my recent work</h5>
           </div>
-        </div>
+          <div className="section-content">
+            <div className="project-list">
+              {projectList.map(project => {
+                const { edges: projectImgData } = data.ProjectImgs;
+                const image = projectImgData.find(n => {
+                  return n.node.relativePath === `projects/${project.img}`;
+                });
+                const imageSizes = image.node.childImageSharp.sizes;
+                return (
+                  <a
+                    href={project.url}
+                    key={project.url}
+                    className="single-card"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="card-img">
+                      <Img
+                        title={project.name}
+                        alt="Screenshot of Project"
+                        sizes={imageSizes}
+                        className="card-img_src center-block"
+                      />
+                    </div>
+                    <div className="blue-divider" />
+                    <div className="card-info">
+                      <h5 className="card-name">{project.name}</h5>
+                      <p>{project.description}</p>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+          </div>
         <div className="arrow animated bounceInDown">
         </div>
-      </div>
+      </section>
     )}
   />
 );

@@ -18,7 +18,7 @@ const Cover = ({id}) => (
       }
     `}
     render={data => (
-      <div id={id} className="cover animated">
+      <section id={id} className="cover animated">
         <Img
           title="Cover image"
           alt="Aurora"
@@ -41,7 +41,7 @@ const Cover = ({id}) => (
         <div className="arrow animated bounceInDown">
         </div>
         <Elements />
-      </div>
+      </section>
     )}
   />
 );

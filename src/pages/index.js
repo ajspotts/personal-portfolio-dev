@@ -6,7 +6,6 @@ import Cover from "../components/cover";
 import About from "../components/about";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
-// import Elements from "../components/particles";
 
 const IndexPage = () => (
   <Layout>

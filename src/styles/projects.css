@@ -1,0 +1,145 @@
+.projects {
+  height: 100%;
+  width: 100%;
+  margin-top: 60px;
+  color: rgba(0, 0, 0, 0.651);
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.projects > h2 {
+  margin-bottom: 0;
+}
+
+.projects > p {
+  color: black;
+}
+
+.subheader {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.projects a {
+  color: black;
+}
+.projects a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.projects h5 {
+  color: black;
+}
+
+.project-list {
+  padding-top: 10px;
+  list-style: none;
+  display: flex !important;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: -webkit-inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-card {
+  height: 240px;
+  width: 340px;
+  display: block;
+  margin-bottom: 40px;
+  text-align: left;
+  border-style: solid;
+  border-color: rgba(51, 122, 183, 0.1);
+  border-width: thin;
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #d3d3d3;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.card-img {
+  height: 50%;
+  overflow: hidden;
+}
+
+.gatsby-image-outer-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.card-img_src {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.single-card:hover .card-img_src {
+  transform: scale(1.18);
+  text-decoration: none !important;
+}
+
+.card-info {
+  padding: 10px;
+  width: 100%;
+  height: 50%;
+}
+
+.card-info > p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  height: 90%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.card-info h4 {
+  color: black;
+}
+
+.card-info h4:hover {
+  text-decoration: underline;
+}
+
+.blue-divider {
+  width: 100%;
+  height: 6px;
+  background-color: #337ab7;
+}
+
+.hide {
+  display: none;
+}
+
+/* ******* BOOTSRAP FORM CONTROL  *******/
+.form-control {
+  font-size: 16px !important;
+}
+
+@media only screen and (min-width: 550px) {
+  .projects .subheader {
+    padding-right: 40%;
+    padding-left: 40%;
+  }
+}

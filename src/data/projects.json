@@ -1,31 +1,37 @@
 [
   {
+    "name": "SpaceX Launch Tracker",
+    "description": "An app designed to follow SpaceX launches created with React, GraphQL & Apollo.",
+    "img": "SpaceX.png",
+    "url": "https://obscure-garden-11919.herokuapp.com/"
+  },
+  {
     "name": "MERN Shopping List",
-    "description": "Shopping List app built with the MERN (MongoDB, Express, React, Node) stack.",
+    "description": "A dynamic app built with the MERN (MongoDB, Express, React, Node) stack which enable users to sign in, create and edit a shopping list.",
     "img": "MERN.png",
     "url": "https://desolate-forest-24182.herokuapp.com/"
   },
   {
     "name": "Quali-Fi",
-    "description": "A job posting site created with Angular and Ruby on Rails",
+    "description": "A job posting site created with Angular and Ruby on Rails.",
     "img": "Quali-Fi.png",
     "url": "https://quali-fi.netlify.com/#/"
   },
   {
     "name": "Charity Finder",
-    "description": "A website designed to aid in located charities based on user input built using React and Ruby on Rails",
+    "description": "A website designed to aid in locating charities based on user input built using React and Ruby on Rails.",
     "img": "CharityFinder.png",
     "url": "https://charity-finder.netlify.com/"
   },
   {
     "name": "Budgit",
-    "description": "Am application to track monthly expenditures built with Ruby on Rails",
+    "description": "An application to track monthly expenditures built with Ruby on Rails.",
     "img": "Budgit.png",
     "url": "https://budgitapplication.herokuapp.com/"
   },
   {
     "name": "Simon game",
-    "description": "A simple game based on Simon built utilizing JavaScript and jQuery",
+    "description": "A simple game based on Simon built utilizing JavaScript and jQuery.",
     "img": "Simon.png",
     "url": "https://ajspotts.github.io/Project-1/"
   }

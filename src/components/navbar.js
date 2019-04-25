@@ -57,7 +57,7 @@ class Navbar extends Component {
                 offset={0}
                 duration={700}
               >
-                Contact Me
+                Contact
               </Link>
             </li>
           </ul>
