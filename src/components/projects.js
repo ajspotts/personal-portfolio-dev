@@ -8,7 +8,7 @@ const Projects = ({ id }) => (
   <StaticQuery
     query={graphql`
       query ProjectImgQuery {
-        projectsImg: file(relativePath: { eq: "mountain.jpg" }) {
+        projectsImg: file(relativePath: { eq: "balloons.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -49,7 +49,7 @@ const Projects = ({ id }) => (
         />
         <div className="overlay" />
         <div className="projects">
-        <h1 className="name"><b>Projects</b></h1>
+        <h1 className="name mt-5"><b>Projects</b></h1>
           <div className="description mb-4">
               <h5 className="greetings">Please take a look at some of my recent work</h5>
           </div>

@@ -3,6 +3,7 @@ import Img from 'gatsby-image';
 import { StaticQuery, graphql } from "gatsby";
 import html5 from "../images/html5.svg";
 import js from "../images/javascript.svg";
+import jQuery from "../images/jQuery.svg";
 import php from "../images/php.svg";
 import python from "../images/python.svg";
 import css3 from "../images/css3.svg"
@@ -53,12 +54,12 @@ const About = ({id}) => (
         />
         <div className="overlay" />
         <div className="about">
-          <h1 className="name">
+          <h1 className="name mt-5">
             <b>About Me</b>
           </h1>
           <div className="description mb-4">
               <h5 className="greetings">I'm a developer who is constantly driven to learn and utilize all of the <br/>newest and leading technologies, tools and frameworks related to software development.  <br/>
-              Here are some of the technologies I have implemented:</h5>
+              Here are some of the technologies I have worked with:</h5>
           </div>
           <div className="svg-container">
             <div className="logo-container">
@@ -84,6 +85,12 @@ const About = ({id}) => (
                 <img src={js} alt="js" />
               </a>
               <h5>JavaScript</h5>
+            </div>
+            <div className="logo-container">
+              <a href="https://rebrand.ly/t8q4kk" target="_blank" rel="noopener noreferrer">
+                <img src={jQuery} alt="jQuery" />
+              </a>
+              <h5>jQuery</h5>
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/5dmk0k" target="_blank" rel="noopener noreferrer">

@@ -9,7 +9,7 @@ class Navbar extends Component {
   
   render() {
     return (
-      <nav className="nav" id="navbar">
+      <nav className="nav navbar navbar-expand-sm fixed-top navbar-light" id="navbar">
         <div className="nav-content">
           <ul className="nav-items">
           <li className="nav-item">
