@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Projects id="projects"/>
     <Contact id="contact"/>
     <footer>
-      © {new Date().getFullYear()}
+      © {new Date().getFullYear()} Alec Spottswood
     </footer>
   </Layout>
 )
