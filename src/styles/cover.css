@@ -5,12 +5,19 @@
   position: relative;
 }
 
-.animated {
+/* .animated {
   -webkit-animation-duration: 12s;
   animation-duration: 12s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+  animation-fill-mode: both; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background: linear-gradient(-135deg, #2A2A72, #3f5efb, #23A6D5, #02FFFF);
+	background-size: 700% 700%;
+	-webkit-animation: Gradient 40s ease infinite;
+	-moz-animation: Gradient 40s ease infinite;
+	animation: Gradient 40s ease infinite;
+} */
 
 @-webkit-keyframes bounceInDown {
   0% {

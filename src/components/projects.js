@@ -8,7 +8,7 @@ const Projects = ({ id }) => (
   <StaticQuery
     query={graphql`
       query ProjectImgQuery {
-        projectsImg: file(relativePath: { eq: "balloons.jpg" }) {
+        projectsImg: file(relativePath: { eq: "top.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -37,7 +37,7 @@ const Projects = ({ id }) => (
       <section id={id} className="section cover animated">
         <Img
           title="Projects image"
-          alt="Mountain"
+          alt="Top"
           fluid={data.projectsImg.childImageSharp.fluid}
           style={{
             position: "absolute",
@@ -77,7 +77,7 @@ const Projects = ({ id }) => (
                         className="card-img_src center-block"
                       />
                     </div>
-                    <div className="blue-divider" />
+                    <div className="divider" />
                     <div className="card-info">
                       <h5 className="card-name">{project.name}</h5>
                       <p>{project.description}</p>

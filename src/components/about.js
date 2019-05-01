@@ -29,7 +29,7 @@ const About = ({id}) => (
   <StaticQuery
     query={graphql`
       query AboutImgQuery {
-        aboutImg: file(relativePath: { eq: "stairs.jpg" }) {
+        aboutImg: file(relativePath: { eq: "towers.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
@@ -58,7 +58,7 @@ const About = ({id}) => (
             <b>About Me</b>
           </h1>
           <div className="description mb-4">
-              <h5 className="greetings">I'm a developer who is constantly driven to learn and utilize all of the <br/>newest and leading technologies, tools and frameworks related to software development.  <br/>
+              <h5 className="greetings">I'm a developer who is driven by the motivation to learn and utilize all of the <br/>newest and leading software technologies, tools and frameworks.  <br/>
               Here are some of the technologies I have worked with:</h5>
           </div>
           <div className="svg-container">
