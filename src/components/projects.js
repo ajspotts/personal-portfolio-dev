@@ -60,7 +60,9 @@ const Projects = ({ id }) => (
                 const image = projectImgData.find(n => {
                   return n.node.relativePath === `projects/${project.img}`;
                 });
+                console.log(image);
                 const imageSizes = image.node.childImageSharp.sizes;
+                console.log(imageSizes);
                 return (
                   <a
                     href={project.url}
