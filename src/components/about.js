@@ -42,7 +42,7 @@ const About = ({id}) => (
       <section id={id} className="section cover">
         <Img
           title="About image"
-          alt="Stairs"
+          alt="towers"
           fluid={data.aboutImg.childImageSharp.fluid}
           style={{
             borderBottom: "2px solid #0F2027",
