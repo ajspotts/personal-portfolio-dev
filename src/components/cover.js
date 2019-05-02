@@ -24,6 +24,7 @@ const Cover = ({id}) => (
           alt="Aurora"
           fluid={data.coverImg.childImageSharp.fluid}
           style={{
+            borderBottom: "2px solid #0F2027",
             position: "absolute",
             left: 0,
             top: 0,

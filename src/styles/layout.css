@@ -14,7 +14,7 @@
   display: inline;
   right: 20px;
   margin-left: 2rem;
-  color: #6B7884;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-item:hover {
@@ -43,7 +43,7 @@
   position: absolute;
   color: #fff;
   background-image: linear-gradient(to right, rgba(117, 127, 154, 0.7), rgba(18, 56, 128, 0.7));
-  border-top: 5px solid #8E9EAB;
+  border-top: 2px solid #0F2027;
 }
 
 .contact h1 {
@@ -149,11 +149,13 @@ header,
 main,
 menu,
 nav {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to right,  rgba(44, 83, 100, 0.6) ,rgba(32, 58, 67, 0.6), rgba(15, 32, 39, 0.6));
   position: sticky; 
   top: 0;
   width: 100%;
   height: 50px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   z-index: 1000;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0);
 }
