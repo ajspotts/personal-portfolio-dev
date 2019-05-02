@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { StaticQuery, graphql } from "gatsby";
 import html5 from "../images/html5.svg";
 import js from "../images/javascript.svg";
-import jQuery from "../images/jQuery.svg";
+import jQuery from "../images/jquery.svg";
 import php from "../images/php.svg";
 import python from "../images/python.svg";
 import css3 from "../images/css3.svg"
@@ -42,7 +42,7 @@ const About = ({id}) => (
       <section id={id} className="section cover">
         <Img
           title="About image"
-          alt="towers"
+          alt="Towers"
           fluid={data.aboutImg.childImageSharp.fluid}
           style={{
             borderBottom: "2px solid #0F2027",
