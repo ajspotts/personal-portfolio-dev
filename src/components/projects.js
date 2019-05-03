@@ -45,6 +45,7 @@ const Projects = ({ id, projectImgs }) => (
                   return n.node.relativePath === `projects/${project.img}`;
                 });
                 const imageSizes = image.node.childImageSharp.sizes;
+                console.log(imageSizes);
                 return (
                   <a
                     href={project.url}

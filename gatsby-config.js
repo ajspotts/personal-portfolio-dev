@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Alec Spottswood's Portfolio Site`,
     description: `The portfolio site of Alec Spottswood hosting various projects and other relatable materials `,
+    siteUrl: `https://alec.netlify.com`,
     author: `Alec Spottswood`,
   },
   plugins: [
@@ -26,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Alec Spottswood`,
+        short_name: `AlecSpottswood`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

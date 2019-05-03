@@ -9,6 +9,7 @@ import Contact from "../components/contact";
 
 const IndexPage = ({ data }) => {
   const { edges: projectImgData } = data.ProjectImgs;
+  console.log(data.ProjectImgs);
   return (
   <Layout>
     <SEO title="Home" keywords={[`web`, `developer`, `full stack`, `application`, `react`, 'portfolio']} />
