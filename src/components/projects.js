@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import "../styles/projects.css";
 import projectList from "../data/projects.json";
 
-const Projects = ({ id }) => (
+const Projects = ({ projectImgs, id }) => (
   <StaticQuery
     query={graphql`
       query ProjectImgQuery {
@@ -12,22 +12,6 @@ const Projects = ({ id }) => (
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        ProjectImgs: allFile(
-          sort: { order: ASC, fields: [absolutePath] }
-          filter: { relativePath: { regex: "/projects/.*.png/" } }
-        ) {
-          edges {
-            node {
-              relativePath
-              name
-              childImageSharp {
-                fluid(maxWidth: 320) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
             }
           }
         }
@@ -56,8 +40,7 @@ const Projects = ({ id }) => (
           <div className="section-content">
             <div className="project-list">
               {projectList.map(project => {
-                const { edges: projectImgData } = data.ProjectImgs;
-                const image = projectImgData.find(n => {
+                const image = projectImgs.find(n => {
                   return n.node.relativePath === `projects/${project.img}`;
                 });
                 const fluid = image.node.childImageSharp.fluid;
