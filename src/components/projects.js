@@ -44,8 +44,7 @@ const Projects = ({ id, projectImgs }) => (
                 const image = projectImgs.find(n => {
                   return n.node.relativePath === `projects/${project.img}`;
                 });
-                const imageSizes = image.node.childImageSharp.sizes;
-                console.log(imageSizes);
+                const imageFluid = image.node.childImageSharp.fluid;
                 return (
                   <a
                     href={project.url}
@@ -58,7 +57,7 @@ const Projects = ({ id, projectImgs }) => (
                       <Img
                         title={project.name}
                         alt="Screenshot of Project"
-                        sizes={imageSizes}
+                        fluid={imageFluid}
                         className="card-img_src center-block"
                       />
                     </div>
