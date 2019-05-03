@@ -6,7 +6,17 @@ module.exports = {
     author: `Alec Spottswood`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Alec Spottswood`,
+        short_name: `AlecSpottswood`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,21 +31,18 @@ module.exports = {
         path: `${__dirname}/src/data/`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Alec Spottswood`,
-        short_name: `AlecSpottswood`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-      },
-    },
     // {
     //   resolve: "gatsby-plugin-react-svg",
     //   options: {
@@ -44,8 +51,5 @@ module.exports = {
     //     }
     //   }
     // }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
   ],
 }
