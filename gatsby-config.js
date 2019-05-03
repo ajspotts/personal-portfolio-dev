@@ -38,6 +38,13 @@ module.exports = {
         path: `${__dirname}/src/pages/`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `styles`,
+        path: `${__dirname}/src/styles/`
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
