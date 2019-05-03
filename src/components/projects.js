@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import "../styles/projects.css";
 import projectList from "../data/projects.json";
 
-const Projects = ({ id, projectImgs }) => (
+const Projects = ({ id }) => (
   <StaticQuery
     query={graphql`
       query ProjectImgQuery {
@@ -15,7 +15,22 @@ const Projects = ({ id, projectImgs }) => (
             }
           }
         }
-       
+        ProjectImgs: allFile(
+          sort: { order: ASC, fields: [absolutePath] }
+          filter: { relativePath: { regex: "/projects/.*.png/" } }
+        ) {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 320) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -41,10 +56,10 @@ const Projects = ({ id, projectImgs }) => (
           <div className="section-content">
             <div className="project-list">
               {projectList.map(project => {
-                const image = projectImgs.find(n => {
+                const { edges: projectImgData } = data.ProjectImgs;
+                const image = projectImgData.find(n => {
                   return n.node.relativePath === `projects/${project.img}`;
                 });
-                const imageFluid = image.node.childImageSharp.fluid;
                 return (
                   <a
                     href={project.url}
@@ -57,7 +72,7 @@ const Projects = ({ id, projectImgs }) => (
                       <Img
                         title={project.name}
                         alt="Screenshot of Project"
-                        fluid={imageFluid}
+                        fluid={image.node.childImageSharp.fluid}
                         className="card-img_src center-block"
                       />
                     </div>
