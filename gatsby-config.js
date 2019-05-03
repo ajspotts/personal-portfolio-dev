@@ -48,15 +48,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
-    // {
-    //   resolve: "gatsby-plugin-react-svg",
-    //   options: {
-    //     rule: {
-    //       include: /images/
-    //     }
-    //   }
-    // }
   ],
 }
