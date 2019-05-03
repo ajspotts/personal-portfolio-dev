@@ -9,7 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import "../styles/layout.css";
-import '../path_to/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Layout = ({ children }) => (
   <StaticQuery
