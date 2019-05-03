@@ -60,7 +60,7 @@ const Projects = ({ id }) => (
                 const image = projectImgData.find(n => {
                   return n.node.relativePath === `projects/${project.img}`;
                 });
-                console.log(image);
+                const fluid = image.node.childImageSharp.fluid;
                 return (
                   <a
                     href={project.url}
@@ -73,7 +73,7 @@ const Projects = ({ id }) => (
                       <Img
                         title={project.name}
                         alt="Screenshot of Project"
-                        fluid={image.node.childImageSharp.fluid}
+                        fluid={fluid}
                         className="card-img_src center-block"
                       />
                     </div>
