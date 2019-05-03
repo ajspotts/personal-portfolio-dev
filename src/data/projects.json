@@ -2,37 +2,37 @@
   {
     "name": "SpaceX Tracker",
     "description": "An app designed to follow SpaceX launches created with React, GraphQL & Apollo.",
-    "img": "SpaceX.png",
+    "img": "spacex.png",
     "url": "https://obscure-garden-11919.herokuapp.com/"
   },
   {
     "name": "Shopping List",
     "description": "An app built with the MERN (MongoDB, Express, React, Node) stack which enable users to sign in, create and edit a shopping list.",
-    "img": "Mern.png",
+    "img": "mern.png",
     "url": "https://desolate-forest-24182.herokuapp.com/"
   },
   {
     "name": "Quali-Fi",
     "description": "A job posting site created with Angular and Ruby on Rails that allows employers to post jobs and applicants to post profiles.",
-    "img": "Quali-Fi.png",
+    "img": "qualifi.png",
     "url": "https://quali-fi.netlify.com/#/"
   },
   {
     "name": "Charity Chooser",
     "description": "A website designed to aid in locating charities based on user input built using React and Ruby on Rails.",
-    "img": "CharityFinder.png",
+    "img": "charitychooser.png",
     "url": "https://charity-finder.netlify.com/"
   },
   {
     "name": "Budgit",
     "description": "An application to track monthly expenditures built with Ruby on Rails.",
-    "img": "Budgit.png",
+    "img": "budgit.png",
     "url": "https://budgitapplication.herokuapp.com/"
   },
   {
     "name": "Simon game",
     "description": "A simple game based on Simon built with JavaScript and jQuery.",
-    "img": "Simon.png",
+    "img": "simon.png",
     "url": "https://ajspotts.github.io/Project-1/"
   }
 ]
