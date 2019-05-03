@@ -73,7 +73,7 @@ const Projects = ({ id }) => (
                       <Img
                         title={project.name}
                         alt="Screenshot of Project"
-                        
+                        fluid={image.node.childImageSharp.fluid}
                         className="card-img_src center-block"
                       />
                     </div>
