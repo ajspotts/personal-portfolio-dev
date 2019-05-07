@@ -1,8 +1,7 @@
 {
   "name": "alec-spottswood-personal-portfolio",
-  "private": true,
   "description": "the portfolio website for Alec Spottswood",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Alec Spottswood",
   "dependencies": {
     "bootstrap": "^4.3.1",
