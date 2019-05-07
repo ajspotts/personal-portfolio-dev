@@ -7,7 +7,7 @@ import jQuery from "../images/jquery.svg";
 import php from "../images/php.svg";
 import python from "../images/python.svg";
 import css3 from "../images/css3.svg"
-import bootstrap from "../images/bootstrap.svg";
+import bootstrapImg from "../images/bootstrap.svg";
 import react from "../images/react.svg";
 import redux from "../images/redux.svg";
 import angular from "../images/angular.svg";
@@ -77,7 +77,7 @@ const About = ({id}) => (
             </div>
             <div className="logo-container">
               <a href="https://rebrand.ly/3nk1ck" target="_blank" rel="noopener noreferrer">
-                <img src={bootstrap} alt="bootstrap" />
+                <img src={bootstrapImg} alt="bootstrap" />
               </a>
               <h5>Bootstrap</h5>
             </div>
