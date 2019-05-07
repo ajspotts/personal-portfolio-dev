@@ -10,3 +10,5 @@ Todo:
 - implement Email contact form
 - additional styling for cover section
 
+Current lighthouse performance score of 96 - Progressive Web App
+

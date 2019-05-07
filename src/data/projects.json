@@ -3,13 +3,13 @@
     "name": "SpaceX Tracker",
     "description": "An app designed to follow SpaceX launches created with React, GraphQL & Apollo.",
     "img": "spacex.png",
-    "url": "https://obscure-garden-11919.herokuapp.com/"
+    "url": "https://spacex-tracker.herokuapp.com/"
   },
   {
     "name": "Shopping List",
     "description": "An app built with the MERN (MongoDB, Express, React, Node) stack which enable users to sign in, create and edit a shopping list.",
     "img": "mern.png",
-    "url": "https://desolate-forest-24182.herokuapp.com/"
+    "url": "https://mern-cart-app.herokuapp.com/"
   },
   {
     "name": "Quali-Fi",
