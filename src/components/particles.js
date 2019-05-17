@@ -16,14 +16,14 @@ const Elements = () => (
     params={{
 	    "particles": {
 			"number": {
-			  "value": 150,
+			  "value": 25,
 			  "density": {
 				"enable": true,
-				"value_area": 700
+				"value_area": 250
 			  }
 			},
 			"color": {
-			  "value": "#0085FF"
+			  "value": "#00C6FF"
 			},
 			"shape": {
 			  "type": "circle",
@@ -41,7 +41,7 @@ const Elements = () => (
 			  }
 			},
 			"opacity": {
-			  "value": 0.4,
+			  "value": 0.6,
 			  "random": false,
 			  "anim": {
 				"enable": true,
@@ -62,9 +62,9 @@ const Elements = () => (
 			},
 			"line_linked": {
 			  "enable": true,
-			  "distance": 140,
-			  "color": "0085FF",
-			  "opacity": .4,
+			  "distance": 210,
+			  "color": "#1CB5E0",
+			  "opacity": 1,
 			  "width": 1
 			},
 			"move": {
