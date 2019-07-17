@@ -1,5 +1,11 @@
 [
   {
+    "name": "Dev Network",
+    "description": "A site created with the MERN (MongoDB, Express, React & NodeJS) stack designed to enable developers to connect and interact.",
+    "img": "devcon.png",
+    "url": "https://devnetwork-app.herokuapp.com"
+  },
+  {
     "name": "SpaceX Tracker",
     "description": "An app designed to follow SpaceX launches created with React, GraphQL & Apollo.",
     "img": "spacex.png",
@@ -7,7 +13,7 @@
   },
   {
     "name": "Shopping List",
-    "description": "An app built with the MERN (MongoDB, Express, React, Node) stack which enable users to sign in, create and edit a shopping list.",
+    "description": "An app built with the MERN stack which enable users to sign in, create and edit a shopping list.",
     "img": "mern.png",
     "url": "https://mern-cart-app.herokuapp.com/"
   },

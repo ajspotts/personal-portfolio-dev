@@ -1,10 +1,10 @@
-import React from "react";
-import Img from "gatsby-image";
-import "../styles/cover.css";
-import { StaticQuery, graphql } from "gatsby";
-import Elements from "../components/particles";
+import React from "react"
+import Img from "gatsby-image"
+import "../styles/cover.css"
+import { StaticQuery, graphql } from "gatsby"
+import Elements from "../components/particles"
 
-const Cover = ({id}) => (
+const Cover = ({ id }) => (
   <StaticQuery
     query={graphql`
       query CoverImgQuery {
@@ -29,7 +29,7 @@ const Cover = ({id}) => (
             left: 0,
             top: 0,
             width: "100%",
-            height: "100%"
+            height: "100%",
           }}
         />
         <div className="overlay" />
@@ -37,14 +37,13 @@ const Cover = ({id}) => (
           <h3 className="name">
             <b>Alec Spottswood</b>
           </h3>
-          <h3 className="greetings">Full Stack Web Developer</h3>
+          <h3 className="greetings">Full Stack Developer</h3>
         </div>
-        <div className="arrow animated bounceInDown">
-        </div>
+        <div className="arrow animated bounceInDown" />
         <Elements />
       </section>
     )}
   />
-);
+)
 
-export default Cover;
+export default Cover
